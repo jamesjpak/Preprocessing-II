@@ -172,7 +172,7 @@ nav {
   margin-left: 60px;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
 nav a {
   padding: 20px;
@@ -238,6 +238,7 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-bottom: 1px dashed grey;
 }
 .home header h1 {
   padding: 20px;
