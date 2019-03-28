@@ -1,1 +1,36 @@
 // Mixins in here
+.create-line() {
+    border-top: 1px dashed grey;
+    border-bottom: 1px dashed grey;
+}
+
+.btn-1 {
+    .custom-btn();
+  }
+  
+  .btn-2 {
+    .custom-btn();
+  }
+  
+  .btn-3 {
+    .custom-btn();
+  }
+  
+  .custom-btn(@width: 200px, @bgcolor:	#AFEEEE, @fontColor: black) {
+    display: block;
+    cursor: pointer;
+    height: 45px;
+    font-size: 20px;
+    border: 1px black;
+    width: @width;
+    background-color: @bgcolor;
+    color: @fontColor;
+
+    &:hover {
+        background-color: @fontColor;
+        color: @bgcolor;
+      }
+    
+  }
+  
+ 
