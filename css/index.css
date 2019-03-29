@@ -8,13 +8,14 @@
   height: 45px;
   font-size: 20px;
   border: 1px black;
+  border-radius: 10px;
   width: 200px;
-  background-color: #AFEEEE;
+  background-color: #3899d1;
   color: black;
 }
 .btn-1:hover {
   background-color: black;
-  color: #AFEEEE;
+  color: #3899d1;
 }
 .btn-2 {
   display: block;
@@ -22,13 +23,14 @@
   height: 45px;
   font-size: 20px;
   border: 1px black;
+  border-radius: 10px;
   width: 200px;
-  background-color: #AFEEEE;
+  background-color: #3899d1;
   color: black;
 }
 .btn-2:hover {
   background-color: black;
-  color: #AFEEEE;
+  color: #3899d1;
 }
 .btn-3 {
   display: block;
@@ -36,13 +38,14 @@
   height: 45px;
   font-size: 20px;
   border: 1px black;
+  border-radius: 10px;
   width: 200px;
-  background-color: #AFEEEE;
+  background-color: #3899d1;
   color: black;
 }
 .btn-3:hover {
   background-color: black;
-  color: #AFEEEE;
+  color: #3899d1;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -222,8 +225,18 @@ nav {
 }
 nav a {
   padding: 20px;
+  text-decoration: none;
+}
+@media ( max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
 }
 header {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -254,6 +267,13 @@ header h1 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media ( max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -261,6 +281,11 @@ header h1 {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media ( max-width: 500px) {
+  .home .content-section .img-content {
+    align-content: center;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -307,6 +332,7 @@ header h1 {
 @media ( max-width: 500px) {
   .home .content-pick .destination {
     width: 100%;
+    align-content: center;
   }
 }
 .introduction {

@@ -7,14 +7,24 @@
 
         a {
             padding: 20px;
+            text-decoration: none;
+        }
+
+        @media @mobile {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
         }
     }
 
 
     header {
+        width: 100%;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    
 
         @media @mobile {
             flex-direction: column;
