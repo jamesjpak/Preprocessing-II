@@ -17,6 +17,12 @@
   background-color: black;
   color: #3899d1;
 }
+@media ( max-width: 500px) {
+  .btn-1 {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .btn-2 {
   display: block;
   cursor: pointer;
@@ -32,6 +38,12 @@
   background-color: black;
   color: #3899d1;
 }
+@media ( max-width: 500px) {
+  .btn-2 {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .btn-3 {
   display: block;
   cursor: pointer;
@@ -46,6 +58,12 @@
 .btn-3:hover {
   background-color: black;
   color: #3899d1;
+}
+@media ( max-width: 500px) {
+  .btn-3 {
+    width: 100%;
+    justify-content: center;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -332,7 +350,9 @@ header h1 {
 @media ( max-width: 500px) {
   .home .content-pick .destination {
     width: 100%;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .introduction {
